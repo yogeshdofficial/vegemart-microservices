@@ -14,12 +14,12 @@ import lombok.NoArgsConstructor;
 @Builder
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ProductNullableRequestDto {
-    @Size(max = 255) @Pattern(regexp = "\\S.*", message = "Field must not be blank if present") private String name;
+  @Size(max = 255) @Pattern(regexp = "\\S.*", message = "Field must not be blank if present") private String name;
 
-    @Pattern(regexp = "\\S.*", message = "Field must not be blank if present") private String description;
+  @Pattern(regexp = "\\S.*", message = "Field must not be blank if present") private String description;
 
-    @Size(max = 255) @Pattern(regexp = "\\S.*", message = "Field must not be blank if present") private String unit;
+  @Size(max = 255) @Pattern(regexp = "\\S.*", message = "Field must not be blank if present") private String unit;
 
-    private Double price;
-    private Boolean inStock;
+  private Double price;
+  private Boolean inStock;
 }

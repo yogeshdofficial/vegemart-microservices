@@ -15,16 +15,15 @@ import lombok.NoArgsConstructor;
 @Builder
 public class ProductDto {
 
-    @NonNull private Long id;
+  @NonNull private Long id;
 
-    @NonNull @NotBlank @Size(max = 255) private String name;
+  @NonNull @NotBlank @Size(max = 255) private String name;
 
-    private Double price;
+  private Double price;
 
-    @NonNull @NotBlank @Size(max = 255) private String unit;
+  @NonNull @NotBlank @Size(max = 255) private String unit;
 
-    private String description;
+  private String description;
 
-    @Nonnull
-    private Boolean inStock;
+  @Nonnull private Boolean inStock;
 }

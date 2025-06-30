@@ -13,9 +13,9 @@ import org.springframework.http.HttpStatusCode;
 @AllArgsConstructor
 @Builder
 public class ApiErrorDto {
-    private HttpStatusCode status;
-    private String message;
-    private List<String> errors;
-    private String serviceName;
-    private Instant timestamp;
+  private HttpStatusCode status;
+  private String message;
+  private List<String> errors;
+  private String serviceName;
+  private Instant timestamp;
 }

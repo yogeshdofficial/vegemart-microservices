@@ -11,6 +11,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class PagedResultDto<T> {
-    private List<T> data;
-    private PagedResultMiscDto misc;
+  private List<T> data;
+  private PagedResultMiscDto misc;
 }

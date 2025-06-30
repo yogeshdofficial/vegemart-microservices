@@ -203,9 +203,9 @@
 					<java>
 						<importOrder />
 						<removeUnusedImports />
-						<palantirJavaFormat>
-							<version>2.35.0</version>
-						</palantirJavaFormat>
+						<googleJavaFormat>
+							<version>1.17.0</version>
+						</googleJavaFormat>
 						<formatAnnotations />
 					</java>
 				</configuration>

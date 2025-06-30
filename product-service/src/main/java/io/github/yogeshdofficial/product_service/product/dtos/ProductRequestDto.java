@@ -15,13 +15,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class ProductRequestDto {
-    @NotBlank @Size(max = 255) private String name;
+  @NotBlank @Size(max = 255) private String name;
 
-    @Pattern(regexp = "\\S.*", message = "Field must not be blank if present") private String description;
+  @Pattern(regexp = "\\S.*", message = "Field must not be blank if present") private String description;
 
-    @Size(max = 255) @NotBlank private String unit;
+  @Size(max = 255) @NotBlank private String unit;
 
-    @NotNull private Double price;
+  @NotNull private Double price;
 
-    @NonNull private Boolean inStock;
+  @NonNull private Boolean inStock;
 }

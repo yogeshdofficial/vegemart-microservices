@@ -12,15 +12,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class ProductFilterDto {
-    @Builder.Default
-    @Min(value = 0, message = "Page number must be non-negative") private int page = 0;
+  @Builder.Default
+  @Min(value = 0, message = "Page number must be non-negative") private int page = 0;
 
-    @Builder.Default
-    @Min(value = 1, message = "Page size must be at least 1") private int size = 10;
+  @Builder.Default
+  @Min(value = 1, message = "Page size must be at least 1") private int size = 10;
 
-    @Size(max = 255, message = "Name filter must not exceed 255 characters") private String name;
+  @Size(max = 255, message = "Name filter must not exceed 255 characters") private String name;
 
-    private Double minPrice;
-    private Double maxPrice;
-    private Boolean inStock;
+  private Double minPrice;
+  private Double maxPrice;
+  private Boolean inStock;
 }

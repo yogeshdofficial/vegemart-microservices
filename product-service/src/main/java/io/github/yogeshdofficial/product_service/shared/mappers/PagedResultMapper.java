@@ -9,18 +9,19 @@ import org.springframework.data.domain.Page;
 @Mapper(componentModel = "spring", unmappedTargetPolicy = ReportingPolicy.IGNORE)
 public interface PagedResultMapper {
 
-    default <T> PagedResultDto<T> toPagedResultDto(Page<T> page) {
-        return PagedResultDto.<T>builder()
-                .data(page.getContent().stream().toList())
-                .misc(PagedResultMiscDto.builder()
-                        .totalElements(page.getTotalElements())
-                        .pageNumber(page.getNumber())
-                        .totalPages(page.getTotalPages())
-                        .isFirst(page.isFirst())
-                        .isLast(page.isLast())
-                        .hasNext(page.hasNext())
-                        .hasPrevious(page.hasPrevious())
-                        .build())
-                .build();
-    }
+  default <T> PagedResultDto<T> toPagedResultDto(Page<T> page) {
+    return PagedResultDto.<T>builder()
+        .data(page.getContent().stream().toList())
+        .misc(
+            PagedResultMiscDto.builder()
+                .totalElements(page.getTotalElements())
+                .pageNumber(page.getNumber())
+                .totalPages(page.getTotalPages())
+                .isFirst(page.isFirst())
+                .isLast(page.isLast())
+                .hasNext(page.hasNext())
+                .hasPrevious(page.hasPrevious())
+                .build())
+        .build();
+  }
 }

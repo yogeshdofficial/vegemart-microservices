@@ -10,11 +10,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class PagedResultMiscDto {
-    long totalElements;
-    int pageNumber;
-    int totalPages;
-    boolean isFirst;
-    boolean isLast;
-    boolean hasNext;
-    boolean hasPrevious;
+  long totalElements;
+  int pageNumber;
+  int totalPages;
+  boolean isFirst;
+  boolean isLast;
+  boolean hasNext;
+  boolean hasPrevious;
 }
